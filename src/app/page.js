@@ -20,7 +20,7 @@ export default function BFHLFrontend() {
         throw new Error('Invalid JSON format. Expected {"data": [values]}');
       }
   
-      const res = await fetch("https://bajajfinserv-backend-jade.vercel.app/", { 
+      const res = await fetch("https://bajajfinserv-backend-jade.vercel.app/bfhl", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(parsedData),
